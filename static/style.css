@@ -14,10 +14,7 @@ body {
     color: #1F2937;
 }
 
-
-/* =========================
-        HEADER
-========================= */
+/* HEADER */
 
 header {
     width: 100%;
@@ -38,10 +35,7 @@ header {
     font-weight: bold;
 }
 
-
-/* =========================
-        NAVIGATION
-========================= */
+/* NAVIGATION */
 
 nav {
     display: flex;
@@ -61,10 +55,7 @@ nav a:hover {
     color: #93C5FD;
 }
 
-
-/* =========================
-          HOME
-========================= */
+/* HOME */
 
 .hero {
     width: 100%;
@@ -131,10 +122,7 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
-
-/* =========================
-          IMAGE
-========================= */
+/* IMAGE */
 
 .image {
     flex: 1;
@@ -150,10 +138,7 @@ nav a:hover {
     box-shadow: 0 15px 35px rgba(37, 99, 235, 0.35);
 }
 
-
-/* =========================
-        MY JOURNEY
-========================= */
+/* MY JOURNEY */
 
 .journey {
     width: 84%;
@@ -190,10 +175,7 @@ nav a:hover {
     margin-bottom: 18px;
 }
 
-
-/* =========================
-          CONTACT
-========================= */
+/* CONTACT */
 
 .contact {
     display: flex;
@@ -257,10 +239,7 @@ nav a:hover {
     background: #1E3A8A;
 }
 
-
-/* =========================
-          FEEDBACK
-========================= */
+/* FEEDBACK */
 
 .feedback {
     min-height: 80vh;
@@ -330,10 +309,7 @@ nav a:hover {
     transform: scale(1.03);
 }
 
-
-/* =========================
-          THANK YOU
-========================= */
+/* THANK YOU */
 
 .thankyou {
     min-height: 75vh;
@@ -365,10 +341,7 @@ nav a:hover {
     line-height: 1.6;
 }
 
-
-/* =========================
-           FOOTER
-========================= */
+/* FOOTER */
 
 footer {
     margin-top: 0;
@@ -387,14 +360,9 @@ footer strong {
     color: #93C5FD;
 }
 
-
-/* =========================
-       MOBILE RESPONSIVE
-========================= */
+/* MOBILE RESPONSIVE */
 
 @media screen and (max-width: 768px) {
-
-    /* HEADER */
 
     header {
         flex-direction: column;
@@ -406,8 +374,6 @@ footer strong {
         text-align: center;
         margin-bottom: 12px;
     }
-
-    /* NAVIGATION */
 
     nav {
         width: 100%;
@@ -422,9 +388,6 @@ footer strong {
         font-size: 14px;
         white-space: nowrap;
     }
-
-
-    /* HOME */
 
     .hero {
         flex-direction: column-reverse;
@@ -460,9 +423,6 @@ footer strong {
         font-size: 16px;
     }
 
-
-    /* JOURNEY / ABOUT */
-
     .journey {
         width: 92%;
         padding: 25px 18px;
@@ -486,9 +446,6 @@ footer strong {
         line-height: 1.7;
     }
 
-
-    /* CONTACT */
-
     .contact {
         flex-direction: column;
         align-items: center;
@@ -502,9 +459,6 @@ footer strong {
         max-width: 450px;
         padding: 25px;
     }
-
-
-    /* FEEDBACK */
 
     .feedback {
         padding: 35px 15px;
@@ -525,9 +479,6 @@ footer strong {
         font-size: 16px;
     }
 
-
-    /* THANK YOU */
-
     .thankyou {
         padding: 30px 15px;
     }
@@ -536,9 +487,6 @@ footer strong {
         width: 100%;
         padding: 28px 20px;
     }
-
-
-    /* FOOTER */
 
     footer {
         font-size: 14px;
