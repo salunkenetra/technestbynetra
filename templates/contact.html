@@ -5,116 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact - TechCanvas by Sanskruti</title>
+    <title>Contact Me - TechNest by Netra</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
+<header>
+
+    <div class="logo">
+        TechNest by Netra
+    </div>
+
     <nav>
-        <a href="/">Home</a>
-        <a href="/about">About Us</a>
-        <a href="/contact">Contact</a>
-        <a href="/feedback">Feedback</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
     </nav>
 
-
-    <!-- Header -->
-    <header>
-        <h1>Contact Me</h1>
-    </header>
+</header>
 
 
-    <!-- Contact Section -->
-    <section class="contact">
+<section class="contact">
 
-        <!-- Contact Information -->
-        <div class="contact-info">
+    <div class="contact-info">
 
-            <h2>Let's Connect!</h2>
+        <h2>Get In Touch</h2>
 
-            <p>
-                Let's connect and get in touch!
-                I would love to hear from you.
-            </p>
+        <p>Let's connect and get in touch!</p>
 
-            <div class="contact-details">
+        <p>
+            <b>Name:</b> Netra Salunke
+        </p>
 
-                <p>
-                    <strong>Name:</strong><br>
-                    Sanskruti Jagdish Nawale
-                </p>
+        <p>
+            <b>Email:</b> Your Email
+        </p>
 
-                <p>
-                    <strong>Email:</strong><br>
-                    sanskruti345@gmail.com
-                </p>
+        <p>
+            <b>Location:</b> Mumbai, Maharashtra
+        </p>
 
-                <p>
-                    <strong>Course:</strong><br>
-                    Diploma in Electronics Engineering
-                </p>
-
-                <p>
-                    <strong>Year:</strong><br>
-                    Second Year
-                </p>
-
-                <p>
-                    <strong>College:</strong><br>
-                    Veermata Jijabai Technological Institute
-                </p>
-
-            </div>
-
-        </div>
+    </div>
 
 
-        <!-- Contact Form -->
-        <div class="contact-form">
+    <div class="contact-form">
 
-            <h2>Send Me a Message</h2>
+        <h2>Send Message</h2>
 
-            <form>
+        <input
+            type="text"
+            placeholder="Your Name">
 
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Enter Your Name"
-                    required
-                >
+        <input
+            type="email"
+            placeholder="Your Email">
 
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Enter Your Email"
-                    required
-                >
+        <textarea
+            placeholder="Your Message"></textarea>
 
-                <textarea
-                    name="message"
-                    placeholder="Write Your Message..."
-                    required
-                ></textarea>
+        <button type="button">
+            Submit
+        </button>
 
-                <button type="submit">
-                    Send Message
-                </button>
+    </div>
 
-            </form>
-
-        </div>
-
-    </section>
+</section>
 
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 TechCanvas by Sanskruti</p>
-    </footer>
+<footer>
+
+    <p>
+        Designed & Developed by
+        <strong>Netra Mangesh Salunke</strong>
+    </p>
+
+    <p>© 2026 Netra Salunke</p>
+
+</footer>
 
 </body>
-
 </html>
