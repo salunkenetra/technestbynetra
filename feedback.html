@@ -5,99 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Feedback - TechNest by Netra</title>
+    <title>Feedback - TechCanvas by Sanskruti</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
-    <header>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact</a>
+        <a href="/feedback">Feedback</a>
+    </nav>
 
-        <div class="logo">
-            TechNest by Netra
+
+    <!-- Feedback Section -->
+    <section class="feedback">
+
+        <h1>Share Your Feedback</h1>
+
+        <p class="feedback-intro">
+            Your feedback is valuable to me!
+            Please share your thoughts about my website.
+        </p>
+
+        <div class="feedback-box">
+
+            <form method="POST" action="/feedback">
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter Your Email"
+                    required
+                >
+
+                <textarea
+                    name="message"
+                    placeholder="Write your feedback here..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Submit Feedback
+                </button>
+
+            </form>
+
         </div>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="feedback.html">Feedback</a>
-        </nav>
-
-    </header>
+    </section>
 
 
-    <div class="content">
-
-        <span class="welcome">YOUR FEEDBACK</span>
-
-        <h1>Feedback</h1>
-
-        <h2>Share Your Thoughts</h2>
-
-        <p>
-            I would love to know what you think about my website.
-            Your feedback will help me improve my skills and
-            create better projects in the future.
-        </p>
-
-        <form action="thankyou.html" method="get">
-
-            <p>
-                <label for="name">Your Name:</label>
-            </p>
-
-            <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your name"
-                required
-            >
-
-            <p>
-                <label for="email">Your Email:</label>
-            </p>
-
-            <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-            >
-
-            <p>
-                <label for="message">Your Feedback:</label>
-            </p>
-
-            <textarea
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Write your feedback here..."
-                required
-            ></textarea>
-
-            <br><br>
-
-            <button type="submit" class="btn">
-                Submit Feedback
-            </button>
-
-        </form>
-
-    </div>
-
-
+    <!-- Footer -->
     <footer>
-
-        <p>
-            Designed & Developed by
-            <strong>Netra Mangesh Salunke</strong>
-        </p>
-
+        <p>© 2026 TechCanvas by Sanskruti</p>
     </footer>
 
 </body>
