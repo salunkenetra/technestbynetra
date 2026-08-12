@@ -5,25 +5,25 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+return render_template("index.html")
 
 
 @app.route("/about")
 def about():
-    return render_template("about.html")
+return render_template("about.html")
 
 
 @app.route("/contact")
 def contact():
-    return render_template("contact.html")
+return render_template("contact.html")
 
 
 @app.route("/feedback", methods=["GET", "POST"])
 def feedback():
-    if request.method == "POST":
-        return render_template("thankyou.html")
+if request.method == "POST":
+return render_template("thankyou.html")
 
-    return render_template("feedback.html")
+return render_template("feedback.html")
 
 
 @app.route("/thankyou")
