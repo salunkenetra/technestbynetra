@@ -3,37 +3,37 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route("/")
 def home():
-    return render_template('index.html')
+    return render_template("index.html")
 
 
-@app.route('/about')
+@app.route("/about")
 def about():
-    return render_template('about.html')
+    return render_template("about.html")
 
 
-@app.route('/contact')
+@app.route("/contact")
 def contact():
-    return render_template('contact.html')
+    return render_template("contact.html")
 
 
-@app.route('/feedback', methods=['GET', 'POST'])
+@app.route("/feedback", methods=["GET", "POST"])
 def feedback():
 
-    if request.method == 'POST':
-        name = request.form['name']
-        email = request.form['email']
-        message = request.form['message']
+    if request.method == "POST":
+        name = request.form.get("name")
+        email = request.form.get("email")
+        message = request.form.get("message")
 
         print("Name:", name)
         print("Email:", email)
         print("Feedback:", message)
 
-        return render_template('thankyou.html')
+        return render_template("thankyou.html")
 
-    return render_template('feedback.html')
+    return render_template("feedback.html")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)
