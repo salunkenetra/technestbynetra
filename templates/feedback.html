@@ -5,72 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Feedback - TechCanvas by Sanskruti</title>
+    <title>Feedback - TechNest by Netra</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
+<header>
+
+    <div class="logo">
+        TechNest by Netra
+    </div>
+
     <nav>
-        <a href="/">Home</a>
-        <a href="/about">About Us</a>
-        <a href="/contact">Contact</a>
-        <a href="/feedback">Feedback</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
     </nav>
 
-
-    <!-- Feedback Section -->
-    <section class="feedback">
-
-        <h1>Share Your Feedback</h1>
-
-        <p class="feedback-intro">
-            Your feedback is valuable to me!
-            Please share your thoughts about my website.
-        </p>
-
-        <div class="feedback-box">
-
-            <form method="POST" action="/feedback">
-
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Enter Your Name"
-                    required
-                >
-
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Enter Your Email"
-                    required
-                >
-
-                <textarea
-                    name="message"
-                    placeholder="Write your feedback here..."
-                    required
-                ></textarea>
-
-                <button type="submit">
-                    Submit Feedback
-                </button>
-
-            </form>
-
-        </div>
-
-    </section>
+</header>
 
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 TechCanvas by Sanskruti</p>
-    </footer>
+<section class="feedback">
+
+    <h1>Share Your Feedback</h1>
+
+    <div class="feedback-box">
+
+        <form>
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Enter Your Name"
+                required>
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter Your Email"
+                required>
+
+            <textarea
+                name="message"
+                placeholder="Write your feedback here..."
+                required></textarea>
+
+            <button type="submit">
+                Submit Feedback
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        Designed & Developed by
+        <strong>Netra Mangesh Salunke</strong>
+    </p>
+
+    <p>© 2026 Netra Salunke</p>
+
+</footer>
 
 </body>
-
 </html>
