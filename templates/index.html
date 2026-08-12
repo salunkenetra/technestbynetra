@@ -4,94 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>TechCanvas by Sanskruti</title>
-
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>TechNest by Netra</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
+<header>
+    <div class="logo">TechNest by Netra</div>
+
     <nav>
-        <a href="/">Home</a>
-        <a href="/about">About Us</a>
-        <a href="/contact">Contact</a>
-        <a href="/feedback">Feedback</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
     </nav>
+</header>
 
 
-    <!-- Hero Section -->
-    <section class="hero">
+<section class="hero">
 
-        <div class="content">
+    <div class="content">
 
-            <span class="welcome">
-                WELCOME TO MY WEBSITE
-            </span>
+        <span class="welcome">
+            WELCOME TO MY FIRST WEBSITE
+        </span>
 
-            <h1>
-                TechCanvas by Sanskruti
-            </h1>
+        <h1>TechNest by Netra</h1>
 
-            <h2>
-                Hello, I'm Sanskruti Jagdish Nawale
-            </h2>
+        <h2>Netra Mangesh Salunke</h2>
 
-            <h3>
-                Diploma in Electronics Engineering
-            </h3>
-
-            <p>
-                I am a Second Year Diploma student in Electronics Engineering.
-                This website is my personal college project where I showcase
-                my learning, interests and creativity in technology and web development.
-            </p>
-
-            <a href="/about" class="btn">
-                Explore More
-            </a>
-
-        </div>
-
-
-        <!-- Profile Image -->
-        <div class="image">
-
-            <img
-                src="{{ url_for('static', filename='profile.jpg.jpg') }}"
-                alt="Sanskruti Jagdish Nawale"
-            >
-
-        </div>
-
-    </section>
-
-
-    <!-- Learning Journey -->
-    <section class="journey">
-
-        <h2>My Learning Journey</h2>
+        <h3>Diploma in Electronics Engineering</h3>
 
         <p>
-            As an Electronics Engineering student, I enjoy learning
-            new technologies and developing practical skills through
-            different projects.
+            Hello! I am a Second Year Diploma student at
+            Veermata Jijabai Technological Institute.
+            This website is my first web development project
+            developed using Python (Flask), HTML and CSS.
         </p>
 
-        <p>
-            Through this website, I am exploring HTML, CSS, Python,
-            Flask and responsive web design concepts.
-        </p>
+        <a href="about.html" class="btn">
+            Explore More
+        </a>
 
-    </section>
+    </div>
 
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 TechCanvas by Sanskruti</p>
-    </footer>
+    <div class="image">
+        <img src="profile.jpg" alt="Netra">
+    </div>
+
+</section>
+
+
+<section class="journey">
+
+    <h2>My Journey</h2>
+
+    <p>
+        I enjoy learning new technologies and improving my
+        practical knowledge through projects.
+        This website is one of my first web development
+        projects using Python Flask.
+    </p>
+
+</section>
+
+
+<footer>
+
+    <p>
+        Designed & Developed by
+        <strong>Netra Mangesh Salunke</strong>
+    </p>
+
+    <p>© 2026 Netra Salunke</p>
+
+</footer>
 
 </body>
-
 </html>
