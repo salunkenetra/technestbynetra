@@ -1,247 +1,771 @@
+/* ========================================
+   TECHCANVAS BY SANSKRUTI
+   MAIN STYLE SHEET
+======================================== */
+
+
+/* ========================================
+   BASIC RESET
+======================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: white;
-    min-height: 100vh;
+    background: #f8fafc;
+    color: #1f2937;
+    overflow-x: hidden;
 }
 
 
-/* HEADER */
-
-header {
-    width: 100%;
-    padding: 20px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.25);
-}
-
-
-/* LOGO */
-
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-}
-
-
-/* NAVIGATION */
+/* ========================================
+   NAVIGATION BAR
+======================================== */
 
 nav {
+    width: 100%;
+    background: #0b1f4d;
     display: flex;
-    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 18px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-size: 17px;
-    transition: 0.3s;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
-    color: #00e5ff;
+    color: #60a5fa;
 }
 
 
-/* MAIN CONTENT */
+/* ========================================
+   HEADER
+======================================== */
+
+header {
+    width: 100%;
+    background: #123b82;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+
+/* ========================================
+   HOME / HERO SECTION
+======================================== */
+
+.hero {
+    width: 100%;
+    min-height: 82vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 8%;
+    gap: 50px;
+    background: linear-gradient(135deg, #ffffff, #eaf3ff);
+}
 
 .content {
-    max-width: 850px;
-    margin: 80px auto;
-    padding: 40px;
-    text-align: center;
+    flex: 1;
 }
-
-
-/* WELCOME TEXT */
 
 .welcome {
     display: inline-block;
-    font-size: 15px;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    color: #00e5ff;
+    background: #dbeafe;
+    color: #0b1f4d;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
-
-/* HEADINGS */
-
-h1 {
-    font-size: 52px;
-    margin-bottom: 15px;
+.content h1 {
+    font-size: 48px;
+    color: #0b1f4d;
+    margin: 15px 0;
 }
 
-h2 {
+.content h2 {
     font-size: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    color: #1f2937;
 }
 
-h3 {
+.content h3 {
     font-size: 21px;
-    margin-bottom: 25px;
-    color: #00e5ff;
+    color: #2563eb;
+    margin-bottom: 20px;
 }
 
-
-/* PARAGRAPHS */
-
-p {
+.content p {
     font-size: 18px;
     line-height: 1.8;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    color: #4b5563;
 }
 
 
-/* IMAGE */
-
-.image {
-    text-align: center;
-    margin: 30px auto;
-}
-
-.image img {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid white;
-}
-
-
-/* BUTTON */
+/* ========================================
+   BUTTON
+======================================== */
 
 .btn {
     display: inline-block;
-    padding: 13px 28px;
-    margin-top: 20px;
-    background: #00e5ff;
-    color: #0f2027;
     text-decoration: none;
-    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 14px 32px;
     border-radius: 30px;
     font-size: 17px;
     font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
+    background: #0b1f4d;
+    transform: translateY(-3px);
+}
+
+
+/* ========================================
+   PROFILE IMAGE
+======================================== */
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid white;
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.35);
+}
+
+
+/* ========================================
+   LEARNING JOURNEY
+======================================== */
+
+.journey {
+    width: 84%;
+    margin: 50px auto;
     background: white;
+    padding: 45px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.journey h2 {
+    color: #0b1f4d;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.journey p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 12px;
+}
+
+
+/* ========================================
+   ABOUT SECTION
+======================================== */
+
+.about {
+    width: 100%;
+    min-height: 75vh;
+    padding: 55px 8%;
+    background: linear-gradient(135deg, #f8fbff, #eaf3ff);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.about-box {
+    background: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s ease;
+}
+
+.about-box:hover {
+    transform: translateY(-5px);
+}
+
+.about-box h2 {
+    color: #0b1f4d;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.about-box p {
+    color: #4b5563;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-box strong {
+    color: #123b82;
+}
+
+
+/* ========================================
+   CONTACT SECTION
+======================================== */
+
+.contact {
+    width: 100%;
+    min-height: 75vh;
+    padding: 55px 8%;
+
+    background: linear-gradient(135deg, #f8fbff, #eaf3ff);
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+}
+
+
+/* Contact Information */
+
+.contact-info,
+.contact-form {
+    background: white;
+    width: 420px;
+    max-width: 100%;
+    padding: 35px;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.contact-info h2,
+.contact-form h2 {
+    color: #0b1f4d;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #4b5563;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.contact-details strong {
+    color: #123b82;
+}
+
+
+/* ========================================
+   CONTACT FORM
+======================================== */
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+
+    border: 2px solid #bfdbfe;
+    border-radius: 10px;
+
+    font-size: 16px;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #2563eb;
+}
+
+.contact-form textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    background: #0b1f4d;
+    color: white;
+
+    border: none;
+    padding: 14px;
+
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #2563eb;
     transform: translateY(-2px);
 }
 
 
-/* FORM */
+/* ========================================
+   FEEDBACK SECTION
+======================================== */
 
-form {
-    max-width: 600px;
-    margin: 30px auto;
-    text-align: left;
-}
-
-form p {
-    margin-bottom: 8px;
-}
-
-label {
-    font-size: 17px;
-    font-weight: bold;
-}
-
-input,
-textarea {
+.feedback {
     width: 100%;
-    padding: 14px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
+    min-height: 78vh;
+
+    padding: 55px 20px;
+
+    background: linear-gradient(135deg, #0b1f4d, #2563eb);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-textarea {
+.feedback h1 {
+    color: white;
+    font-size: 38px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.feedback-intro {
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* Feedback Box */
+
+.feedback-box {
+    background: white;
+
+    width: 450px;
+    max-width: 100%;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.feedback-box form {
+    width: 100%;
+}
+
+.feedback-box input,
+.feedback-box textarea {
+    width: 100%;
+
+    padding: 14px;
+    margin: 10px 0;
+
+    border: 2px solid #bfdbfe;
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.feedback-box input:focus,
+.feedback-box textarea:focus {
+    border-color: #2563eb;
+}
+
+.feedback-box textarea {
+    height: 140px;
     resize: vertical;
 }
 
+.feedback-box button {
+    width: 100%;
 
-/* LINKS */
+    padding: 14px;
+    margin-top: 15px;
 
-a {
-    color: #00e5ff;
+    background: #0b1f4d;
+    color: white;
+
+    border: none;
+    border-radius: 25px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.feedback-box button:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
 }
 
 
-/* FOOTER */
+/* ========================================
+   THANK YOU PAGE
+======================================== */
+
+.thankyou {
+    min-height: 78vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    background: linear-gradient(135deg, #0b1f4d, #2563eb);
+}
+
+.thankyou-box {
+    background: white;
+
+    width: 500px;
+    max-width: 100%;
+
+    padding: 45px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.thankyou-box h1 {
+    color: #0b1f4d;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.thankyou-box p {
+    color: #4b5563;
+    font-size: 18px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.thankyou-box button {
+    background: #0b1f4d;
+    color: white;
+
+    border: none;
+
+    padding: 12px 30px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
 
 footer {
+    width: 100%;
+    background: #0b1f4d;
+    color: white;
+
     text-align: center;
-    padding: 25px;
-    margin-top: 40px;
-    background: rgba(0, 0, 0, 0.25);
+
+    padding: 22px;
+
+    font-size: 16px;
 }
 
-footer p {
-    font-size: 15px;
-    margin: 0;
+footer strong {
+    color: #93c5fd;
 }
 
 
-/* MOBILE */
+/* ========================================
+   MOBILE RESPONSIVE
+======================================== */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
-    header {
-        padding: 18px 20px;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .logo {
-        font-size: 24px;
-    }
+    /* Navigation */
 
     nav {
-        gap: 15px;
-        flex-wrap: wrap;
+        width: 100%;
+        padding: 14px 8px;
+
+        display: flex;
+        flex-direction: row;
         justify-content: center;
+        align-items: center;
+
+        flex-wrap: wrap;
+        gap: 5px 12px;
     }
 
     nav a {
-        font-size: 15px;
+        font-size: 14px;
+        margin: 0;
+        padding: 5px;
+        white-space: nowrap;
+    }
+
+
+    /* Header */
+
+    header {
+        padding: 28px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+
+    /* Home */
+
+    .hero {
+        min-height: auto;
+
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        padding: 45px 20px;
+
+        gap: 25px;
     }
 
     .content {
-        margin: 40px auto;
-        padding: 25px 20px;
+        width: 100%;
     }
 
-    h1 {
-        font-size: 38px;
+    .welcome {
+        font-size: 12px;
+        padding: 8px 15px;
     }
 
-    h2 {
-        font-size: 25px;
+    .content h1 {
+        font-size: 34px;
+        line-height: 1.2;
     }
 
-    h3 {
+    .content h2 {
+        font-size: 24px;
+    }
+
+    .content h3 {
         font-size: 18px;
     }
 
-    p {
+    .content p {
         font-size: 16px;
+        line-height: 1.7;
+    }
+
+
+    /* Profile Image */
+
+    .image {
+        width: 100%;
     }
 
     .image img {
-        width: 180px;
-        height: 180px;
+        width: 230px;
+        height: 230px;
+    }
+
+
+    /* Journey */
+
+    .journey {
+        width: 92%;
+        padding: 28px 20px;
+        margin: 30px auto;
+    }
+
+    .journey h2 {
+        font-size: 27px;
+    }
+
+    .journey p {
+        font-size: 16px;
+    }
+
+
+    /* About */
+
+    .about {
+        padding: 35px 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-box {
+        width: 100%;
+        max-width: 450px;
+        padding: 25px;
+    }
+
+    .about-box h2 {
+        font-size: 23px;
+    }
+
+
+    /* Contact */
+
+    .contact {
+        width: 100%;
+        padding: 35px 15px;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 25px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        max-width: 450px;
+        padding: 25px;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 24px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+    }
+
+
+    /* Feedback */
+
+    .feedback {
+        padding: 40px 15px;
+        min-height: auto;
+    }
+
+    .feedback h1 {
+        font-size: 29px;
+    }
+
+    .feedback-intro {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .feedback-box {
+        width: 100%;
+        max-width: 450px;
+        padding: 23px;
+    }
+
+
+    /* Thank You */
+
+    .thankyou {
+        padding: 25px 15px;
+    }
+
+    .thankyou-box {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .thankyou-box h1 {
+        font-size: 29px;
+    }
+
+    .thankyou-box p {
+        font-size: 16px;
+    }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media screen and (max-width: 400px) {
+
+    nav {
+        gap: 3px 8px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .content h1 {
+        font-size: 29px;
+    }
+
+    .content h2 {
+        font-size: 21px;
+    }
+
+    .image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 20px;
+    }
+
+    .feedback-box {
+        padding: 20px;
     }
 }
