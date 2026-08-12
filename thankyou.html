@@ -5,61 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Thank You - TechNest by Netra</title>
+    <title>Thank You - TechCanvas by Sanskruti</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
-    <header>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact</a>
+        <a href="/feedback">Feedback</a>
+    </nav>
 
-        <div class="logo">
-            TechNest by Netra
+
+    <!-- Thank You Section -->
+    <section class="thankyou">
+
+        <div class="thankyou-box">
+
+            <h1>Thank You! 💙</h1>
+
+            <p>
+                Thank you for taking the time to share your feedback.
+            </p>
+
+            <p>
+                Your response is valuable to me and helps me
+                improve my website and projects.
+            </p>
+
+            <a href="/" class="btn">
+                Back to Home
+            </a>
+
         </div>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="feedback.html">Feedback</a>
-        </nav>
-
-    </header>
+    </section>
 
 
-    <div class="content">
-
-        <span class="welcome">THANK YOU!</span>
-
-        <h1>Thank You for Your Feedback</h1>
-
-        <h2>Your response has been received.</h2>
-
-        <p>
-            Thank you for taking the time to visit my website
-            and share your valuable feedback.
-        </p>
-
-        <p>
-            Your feedback motivates me to keep learning,
-            improving my skills and creating better projects.
-        </p>
-
-        <a href="index.html" class="btn">
-            Back to Home
-        </a>
-
-    </div>
-
-
+    <!-- Footer -->
     <footer>
-
-        <p>
-            Designed & Developed by
-            <strong>Netra Mangesh Salunke</strong>
-        </p>
-
+        <p>© 2026 TechCanvas by Sanskruti</p>
     </footer>
 
 </body>
